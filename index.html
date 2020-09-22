@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+ <html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width height=device-height user-scalable=no">
+		<link rel="stylesheet" href="style.css"/>
+		<title>Carral</title>
+	</head>
+	<body>
+		<header>
+			
+			<h1>Hello!</h1>
+			<nav>
+				<ul>
+					<a href="#"><li>Hi</li></a>
+					<a href="#"><li>Hi</li></a>
+					<a href="#"><li>Hi</li></a>
+					<a href="#"><li>Hi</li></a>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<div class="slider">
+				<div class="item item-1"><span>Our</span></div>
+				<div class="item item-2"><span>World</span></div>
+				<div class="item item-3"><span>Is</span></div>
+				<div class="item item-4"><span>Beautiful</span></div>
+			</div>
+			
+			
+		</main>
+		<footer>
+			
+		</footer>
+			<script src="anime.min.js"></script>
+			<script>
+				anime({
+  					targets: 'li',
+  					translateX: function(el) {
+   					 return el.getAttribute('data-x');
+ 					 },
+  					translateY: function(el, i) {
+    				return 50 + (-50 * i);
+  					},
+  						scale: function(el, i, l) {
+    					return (l - i) + .25;
+ 					 },
+  					rotate: function() { return anime.random(-360, 360); },
+  					borderRadius: function() { return ['50%', anime.random(10, 35) + '%']; },
+  					duration: function() { return anime.random(1200, 1800); },
+  					delay: function() { return anime.random(0, 400); },
+  					direction: 'alternate',
+  					loop: true
+				});
+			</script>
+	</body>
+</html>
