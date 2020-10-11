@@ -153,21 +153,7 @@ span {
 	}
 }
 
-/* main info */
 
-.info {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	flex-wrap: wrap;
-	margin: 20px;
-}
 
-.info-text {
-	color: #fff;
-	font-size: 4vh;
-	padding: 20px;
-	display: none;
-}
 
 
